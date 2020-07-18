@@ -5,4 +5,4 @@ Our code will be released soon.
 
 # Demo
 
-![Alt Text](https://media.giphy.com/media/QZsdoFztOpBLCF587w/giphy.gif)
+![Alt Text](https://wx3.sinaimg.cn/mw1024/006hIxlngy1ggvfya6nsfg30go06okjt.gif)
