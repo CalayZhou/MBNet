@@ -4,3 +4,4 @@ Improving Multispectral Pedestrian Detection by Addressing Modality Imbalance Pr
 Our code will be released soon.
 # Demo
 
+![Alt Text](https://media.giphy.com/media/555q4ngZRoxHCtGSrT/giphy.gif) 
