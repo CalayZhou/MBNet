@@ -1,6 +1,8 @@
 # MBNet
 Improving Multispectral Pedestrian Detection by Addressing Modality Imbalance Problems (ECCV 2020)
-- https://arxiv.org/pdf/2008.03043.pdf
+- paper download： https://arxiv.org/pdf/2008.03043.pdf
+- the introduction PPT: https://github.com/CalayZhou/MBNet/blob/master/MBNet-3128.pdf
+
 Our code will be released soon.
 
 # Demo
