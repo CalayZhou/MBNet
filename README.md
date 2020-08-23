@@ -13,39 +13,39 @@ This code is tested on [Ubuntu18.04, tensorflow1.14, numpy1.16, Python3.6,cuda10
  >make sure the GPU enviroment is the same as above (cuda10.0,cudnn7.6), otherwise you may have to compile the `nms` and `utils` according to https://github.com/endernewton/tf-faster-rcnn.
  
 ## 2. Prerequisites
-- train data\
-[Baidu Cloud]() & [KAIST website]()
-- test data\
-[Baidu Cloud]() & [Google Drive]()
-- ResNet50 pretrained model\
-[Baidu Cloud]() & [Google Drive]()
-- MBNet model\
-[Baidu Cloud]() & [Google Drive]()
+- train data (download to ./data/kaist)\
+[Baidu Cloud]() or [KAIST website](https://soonminhwang.github.io/rgbt-ped-detection/)
+- test data (download to ./data/kaist_test)\
+[Baidu Cloud](https://pan.baidu.com/s/1xQMEnHkmV29_Jq1pk_ERVw)(extract code: `ABCD`) or [Google Drive](https://drive.google.com/file/d/1XNSF4GhYNc4J6WrhrLTlYck6ddbW5m8b/view?usp=sharing)
+- ResNet50 pretrained model (download to ./data/models/)\
+[Baidu Cloud](https://pan.baidu.com/s/1f9gy1u_TL6SMo2UNwKFQ7w)(extract code: `ABCD`) or [Google Drive](https://drive.google.com/file/d/1RPdCCRjuyP13tREDv4LJAi7my8rS3UxW/view?usp=sharing)
+- MBNet model(download to ./data/models/)\
+[Baidu Cloud](https://pan.baidu.com/s/11HOz3LM8dkZxOkwEo9wWlQ)(extract code: `ABCD`) or [Google Drive](https://drive.google.com/file/d/1WP6MoOfztkzUtVQf_ScwKhUh4LE6O7Kx/view?usp=sharing)
 
 ## 3. demo example
 
-> 1. Check the [MBNet model]() is available at ./data/models/resnet_e7_l224.hdf5
+> 1. Check the [MBNet model](https://pan.baidu.com/s/11HOz3LM8dkZxOkwEo9wWlQ) is available at ./data/models/resnet_e7_l224.hdf5
 > 2. Run the script: `python demo.py`
 > 3. The detection result is saved at ./data/kaist_demo/.
 
 ## 4. Evaluate model performance
-> 1. check the [MBNet model](https://www.jianshu.com/p/191d1e21f7ed) is available at ./data/models/resnet_e7_l224.hdf5 and the test data is available at ./data/kaist_test.
+> 1. check the [MBNet model](https://pan.baidu.com/s/11HOz3LM8dkZxOkwEo9wWlQ) is available at ./data/models/resnet_e7_l224.hdf5 and the test data is available at ./data/kaist_test.
 > 2. Run the script: `python test.py`
 > 3. The test results are saved at ./data/result/.
-> 3. open the [KAISTdevkit-matlab-wrapper](https://www.jianshu.com/p/191d1e21f7ed) and run the `demo_test.m`.
+> 3. open the [KAISTdevkit-matlab-wrapper](https://github.com/CalayZhou/MBNet/tree/master/KAISTdevkit-matlab-wrapper) and run the `demo_test.m`.
 
 ## 5. Train your own model
-> 1. Check the [ResNet50 pretrained model](https://www.jianshu.com/p/191d1e21f7ed) is available at ./data/models/double_resnet.hdf5 and the train data is available at ./data/kaist.
+> 1. Check the [ResNet50 pretrained model](https://pan.baidu.com/s/1f9gy1u_TL6SMo2UNwKFQ7w) is available at ./data/models/double_resnet.hdf5 and the train data is available at ./data/kaist.
 > 2. Run the script: `python train.py`
-> 3. The traine models are saved at ./output.
+> 3. The trained models are saved at ./output.
 > 4. Evaluate model performance as above.
 
 ## 6. Comparison with other Methods
-Please download the comparison code ([[Matlab implemented](https://soonminhwang.github.io/rgbt-ped-detection/misc/CVPR15_Pedestrian_Benchmark.pdf)]) and run the script according to the README.txt.
+Please download the Matlab implemented comparison code [[Baidu Cloud](https://pan.baidu.com/s/1ogNMx0vGcrdn9dLSRRsk6Q)(extract code: `ABCD`) or [Google Drive](https://drive.google.com/file/d/1h0-VwZrnJH8zBVvk5r5bWt3ekq4KLe45/view?usp=sharing)] and run the script according to the README.txt.
 
 
 ## 7. Acknowledgements
-Thanks to Liu Wei, this pipeline is largely built on his ALFNet code available at: https://github.com/liuwei16/ALFNet
+Thanks to Liu Wei, this pipeline is largely built on his ALFNet code available at: https://github.com/liuwei16/ALFNet.
 
 
 
@@ -62,8 +62,4 @@ If you find our work useful in your research, please consider citing:
     year = {2020}
 }
 ```
-
-
-
-
 
