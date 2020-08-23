@@ -1,0 +1,2 @@
+% bbGt version=3
+person 381 203 26 56 0 0 0 0 0 0 0

@@ -1,0 +1,2 @@
+% bbGt version=3
+person 327 204 25 47 0 0 0 0 0 0 0
