@@ -10,8 +10,13 @@ Improving Multispectral Pedestrian Detection by Addressing Modality Imbalance Pr
 This code is tested on [Ubuntu18.04, tensorflow1.14, numpy1.16, keras2.1.6, python3.6,cuda10.0,cudnn7.6]. 
  
  
- >make sure the GPU enviroment is the same as above (cuda10.0,cudnn7.6), otherwise you may have to compile the `nms` and `utils` according to https://github.com/endernewton/tf-faster-rcnn. Besides, check the keras version is keras2.1, i find there may be some mistakes if the keras version is higher.
+ >make sure the GPU enviroment is the same as above (cuda10.0,cudnn7.6), otherwise you may have to compile the `nms` and `utils` according to https://github.com/endernewton/tf-faster-rcnn. Besides, check the keras version is keras2.1, i find there may be some mistakes if the keras version is higher. I recommend installing the dependencies with Anconda as follows:
  
+  ```
+1. 
+2.
+```
+
 ## 2. Prerequisites
 - train data (download to ./data/kaist)\
 [Baidu Cloud](https://pan.baidu.com/s/1gunujXdb2TPBeibp6fsUQg)(extract code: `ABCD`) or [KAIST website](https://soonminhwang.github.io/rgbt-ped-detection/)
