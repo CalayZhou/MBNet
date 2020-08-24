@@ -14,7 +14,7 @@ This code is tested on [Ubuntu18.04, tensorflow1.14, numpy1.16, Python3.6,cuda10
  
 ## 2. Prerequisites
 - train data (download to ./data/kaist)\
-[Baidu Cloud]() or [KAIST website](https://soonminhwang.github.io/rgbt-ped-detection/)
+[Baidu Cloud](https://pan.baidu.com/s/1gunujXdb2TPBeibp6fsUQg) or [KAIST website](https://soonminhwang.github.io/rgbt-ped-detection/)
 - test data (download to ./data/kaist_test)\
 [Baidu Cloud](https://pan.baidu.com/s/1xQMEnHkmV29_Jq1pk_ERVw)(extract code: `ABCD`) or [Google Drive](https://drive.google.com/file/d/1XNSF4GhYNc4J6WrhrLTlYck6ddbW5m8b/view?usp=sharing)
 - ResNet50 pretrained model (download to ./data/models/)\
