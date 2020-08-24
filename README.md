@@ -13,8 +13,14 @@ This code is tested on [Ubuntu18.04, tensorflow1.14, numpy1.16, keras2.1.6, pyth
  >make sure the GPU enviroment is the same as above (cuda10.0,cudnn7.6), otherwise you may have to compile the `nms` and `utils` according to https://github.com/endernewton/tf-faster-rcnn. Besides, check the keras version is keras2.1, i find there may be some mistakes if the keras version is higher. To be as simple as possible， I recommend installing the dependencies with Anaconda as follows:
  
   ```
-1. 
-2.
+1. conda create -n python36 python=3.6
+2. conda activate python36
+3. pip install tensorflow-gpu==1.14
+4. conda install cudatoolkit=10.0
+5. conda install cudnn=7.6
+6. conda install kera=2.1
+7. conda install opencv
+8. python demo.py
 ```
 
 ## 2. Prerequisites
