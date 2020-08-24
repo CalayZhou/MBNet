@@ -22,7 +22,7 @@ This code is tested on [Ubuntu18.04, tensorflow1.14, numpy1.16, Python3.6,cuda10
 - MBNet model(download to ./data/models/)\
 [Baidu Cloud](https://pan.baidu.com/s/11HOz3LM8dkZxOkwEo9wWlQ)(extract code: `ABCD`) or [Google Drive](https://drive.google.com/file/d/1WP6MoOfztkzUtVQf_ScwKhUh4LE6O7Kx/view?usp=sharing)
 
-## 3. demo example
+## 3. Demo example
 
 > 1. Check the [MBNet model](https://pan.baidu.com/s/11HOz3LM8dkZxOkwEo9wWlQ) is available at ./data/models/resnet_e7_l224.hdf5
 > 2. Run the script: `python demo.py`
