@@ -7,7 +7,7 @@ Improving Multispectral Pedestrian Detection by Addressing Modality Imbalance Pr
 
 # Usage
 ## 1. Dependencies
-This code is tested on [Ubuntu18.04, tensorflow1.14, numpy1.16, Python3.6,cuda10.0,cudnn7.6]. 
+This code is tested on [Ubuntu18.04, tensorflow1.14, numpy1.16, keras2.1.6, python3.6,cuda10.0,cudnn7.6]. 
  
  
  >make sure the GPU enviroment is the same as above (cuda10.0,cudnn7.6), otherwise you may have to compile the `nms` and `utils` according to https://github.com/endernewton/tf-faster-rcnn.
