@@ -17,7 +17,7 @@ This code is tested on [Ubuntu18.04, tensorflow1.14, keras2.1.6, python3.6,cuda1
 2. conda activate python36
 3. conda install cudatoolkit=10.0
 4. conda install cudnn=7.6
-5. conda install tensorflow=1.14
+5. conda install tensorflow-gpu=1.14
 6. conda install keras=2.1
 7. conda install opencv
 8. python demo.py
