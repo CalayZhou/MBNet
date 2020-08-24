@@ -18,7 +18,7 @@ This code is tested on [Ubuntu18.04, tensorflow1.14, numpy1.16, keras2.1.6, pyth
 3. pip install tensorflow-gpu==1.14
 4. conda install cudatoolkit=10.0
 5. conda install cudnn=7.6
-6. conda install kera=2.1
+6. conda install keras=2.1
 7. conda install opencv
 8. python demo.py
 ```
