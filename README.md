@@ -34,10 +34,17 @@ This code is tested on [Ubuntu18.04, tensorflow1.14, keras2.1.6, python3.6,cuda1
 [Baidu Cloud](https://pan.baidu.com/s/11HOz3LM8dkZxOkwEo9wWlQ)(extract code: `ABCD`) or [Google Drive](https://drive.google.com/file/d/1WP6MoOfztkzUtVQf_ScwKhUh4LE6O7Kx/view?usp=sharing)
 
 ## 3. Demo example
+### 3.1 Demo images
 
 > 1. Check the [MBNet model](https://pan.baidu.com/s/11HOz3LM8dkZxOkwEo9wWlQ) is available at ./data/models/resnet_e7_l224.hdf5
 > 2. Run the script: `python demo.py`
 > 3. The detection result is saved at ./data/kaist_demo/.
+### 3.2 Demo video
+
+> 1. Check the [MBNet model](https://pan.baidu.com/s/11HOz3LM8dkZxOkwEo9wWlQ) is available at ./data/models/resnet_e7_l224.hdf5
+> 2. Set weight_path , test_file , lwir_test_file in `demo_video.py`
+> 3. Run the script: `python demo_video.py`
+> 4. The detection result videos saved at MBNet directory.
 
 ## 4. Evaluate model performance
 > 1. check the [MBNet model](https://pan.baidu.com/s/11HOz3LM8dkZxOkwEo9wWlQ) is available at ./data/models/resnet_e7_l224.hdf5 and the test data is available at ./data/kaist_test.
