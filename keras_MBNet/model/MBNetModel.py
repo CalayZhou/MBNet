@@ -220,4 +220,53 @@ class MBNetModel(Base_model):
 				#cv2.putText(img_lwir, str(scores[ind][0]), (x1, y1), cv2.FONT_HERSHEY_COMPLEX, 0.3, (0, 0, 255), 1)
 			img_concat = np.concatenate([img,img_lwir],axis=1)
 			cv2.imwrite(os.path.join(out_path, val_data[f]+'.png'),img_concat)
+			
+	def demo_video_MBNet(self, opt, test_file, lwir_test_file, weight_path):
+		self.model_all.load_weights(weight_path, by_name=True)
+		print('loaded weights from {}'.format(weight_path))
+
+		print('loaded visible video from :'+ test_file)
+
+		print('loaded lwir video from :' + lwir_test_file)
+
+		vid = cv2.VideoCapture(test_file)
+
+		lwir_vid = cv2.VideoCapture(lwir_test_file)
+		fps = vid.get(cv2.CAP_PROP_FPS)
+
+		frame_width = int(vid.get(3))
+		frame_height = int(vid.get(4))
+		out_vid = cv2.VideoWriter('output_vid.avi', cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), fps,
+								  (frame_width, frame_height))
+		out_lwir_vid = cv2.VideoWriter('output_lwir_vid.avi', cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), fps,
+									   (frame_width, frame_height))
+		idx = 0
+
+		while True:
+			ret , frame = vid.read()
+
+			lwir_ret, lwir_frame = lwir_vid.read()
+
+			x_in = bbox_process.format_img(frame, opt)
+			x_in_lwir = bbox_process.format_img(lwir_frame, opt)
+			Y = self.model_all.predict([x_in, x_in_lwir])
+			proposals = bbox_process.pred_pp_1st(self.anchors, Y[0], Y[1], opt)
+			bbx, scores = bbox_process.pred_det(proposals, Y[2], Y[3], opt, step=2)
+			for ind in range(len(bbx)):
+				if scores[ind][0] < 0.5:
+					continue
+				(x1, y1, x2, y2) = bbx[ind, :]
+				cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+				# cv2.putText(img, str(scores[ind][0]), (x1, y1), cv2.FONT_HERSHEY_COMPLEX, 0.3, (0, 0, 255), 1)
+				cv2.rectangle(lwir_frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+
+			out_vid.write(frame)
+			out_lwir_vid.write(lwir_frame)
+
+		vid.release()
+		lwir_vid.release()
+		out_vid.release()
+		out_lwir_vid.release()
+		cv2.destroyAllWindows()
+
 
