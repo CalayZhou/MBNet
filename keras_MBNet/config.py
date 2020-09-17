@@ -43,7 +43,7 @@ class Config:
 
 		# setting for inference
 		self.scorethre= 0.01
-		self.overlap_thresh = 0.40
+		self.overlap_thresh = 0.425
 		self.pre_nms_topN = 6000
 		self.post_nms_topN = 100
 		self.roi_stride= 16
