@@ -5,7 +5,7 @@ import numpy as np
 import copy
 
 
-def _hue_kaist(image,image_lwir, min=0.5, max=2.0):
+def _hue_kaist(image,image_lwir, min=0.75, max=1.5):
     hsv = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
     hsv_lwir = cv2.cvtColor(image_lwir, cv2.COLOR_RGB2HSV)
     # x1=hsv[:,:,0]#0-179
@@ -19,7 +19,7 @@ def _hue_kaist(image,image_lwir, min=0.5, max=2.0):
 
     return cv2.cvtColor(hsv, cv2.COLOR_HSV2RGB), cv2.cvtColor(hsv_lwir, cv2.COLOR_HSV2RGB)
 
-def _saturation_kaist(image,image_lwir, min=0.5, max=2.0):
+def _saturation_kaist(image,image_lwir, min=0.75, max=1.5):
     hsv = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
     hsv_lwir = cv2.cvtColor(image_lwir, cv2.COLOR_RGB2HSV)
     # x1 = hsv[:, :, 1]#0-255
@@ -33,7 +33,7 @@ def _saturation_kaist(image,image_lwir, min=0.5, max=2.0):
 
     return cv2.cvtColor(hsv, cv2.COLOR_HSV2RGB), cv2.cvtColor(hsv_lwir, cv2.COLOR_HSV2RGB)
 
-def _brightness_kaist(image,image_lwir, min=0.5, max=2.0):
+def _brightness_kaist(image,image_lwir, min=0.75, max=1.5):
     '''
     Randomly change the brightness of the input image.
     Protected against overflow.
