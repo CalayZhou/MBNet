@@ -33,7 +33,7 @@ def _saturation_kaist(image,image_lwir, min=0.75, max=1.5):
 
     return cv2.cvtColor(hsv, cv2.COLOR_HSV2RGB), cv2.cvtColor(hsv_lwir, cv2.COLOR_HSV2RGB)
 
-def _brightness_kaist(image,image_lwir, min=0.75, max=1.5):
+def _brightness_kaist(image,image_lwir, min=0.5, max=2.0):
     '''
     Randomly change the brightness of the input image.
     Protected against overflow.
